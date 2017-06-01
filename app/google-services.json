@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "698761825595",
+    "firebase_url": "https://quicklyn-75377.firebaseio.com",
+    "project_id": "quicklyn-75377",
+    "storage_bucket": "quicklyn-75377.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698761825595:android:3c7e1c7d561159b3",
+        "android_client_info": {
+          "package_name": "com.quicklyn.quicklyn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698761825595-36ofdm2i8sqehm32665e27bu8knke2s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACGoVXce78Xj-OsoPuKIL6_b-6ResiVWY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
