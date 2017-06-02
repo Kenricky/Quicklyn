@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1450 80 40.486 40.486">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2bb74b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 19px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="シンボル_4_1" data-name="シンボル 4 – 1" transform="translate(1290)">
+    <circle id="楕円形_5" data-name="楕円形 5" class="cls-1" cx="20.243" cy="20.243" r="20.243" transform="translate(160 80)"/>
+    <text id="_2" data-name="2" class="cls-2" transform="translate(175 108)"><tspan x="0" y="0">2</tspan></text>
+  </g>
+</svg>
