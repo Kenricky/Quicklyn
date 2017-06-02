@@ -13,6 +13,13 @@
 
 
     <string name="step_main">Main</string>
-    <string name="step_datails">Details</string>
+    <string name="step_details">Details</string>
     <string name="step_confirm">Confirm</string>
+    
+    <string name="post_type_location">What type of place</string>
+    <string name="post_housing">housing</string>
+    <string name="post_apartment">apartment / condominium</string>
+    <string name="post_office">office / building</string>
+    <string name="post_room">rooms / shared house</string>
+    <string name="post_other">other</string>
 </resources>
