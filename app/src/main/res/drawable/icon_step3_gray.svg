@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1140 80 40.486 40.486">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f7f7;
+        stroke: #95989a;
+      }
+
+      .cls-2 {
+        fill: #777779;
+        font-size: 19px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="シンボル_3_1" data-name="シンボル 3 – 1" transform="translate(860)">
+    <g id="楕円形_3" data-name="楕円形 3" class="cls-1" transform="translate(280 80)">
+      <circle class="cls-3" cx="20.243" cy="20.243" r="20.243"/>
+      <circle class="cls-4" cx="20.243" cy="20.243" r="19.743"/>
+    </g>
+    <text id="_3" data-name="3" class="cls-2" transform="translate(295 108)"><tspan x="0" y="0">3</tspan></text>
+  </g>
+</svg>
