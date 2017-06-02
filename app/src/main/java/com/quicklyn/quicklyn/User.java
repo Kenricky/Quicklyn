@@ -1,6 +1,11 @@
 package com.quicklyn.quicklyn;
 
 
+import android.content.res.Resources;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class User {
 
     private Long id;
@@ -38,5 +43,12 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public boolean saveUser(){
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference dbRef = database.getReference("quicklyn-75377");
+
+
     }
 }

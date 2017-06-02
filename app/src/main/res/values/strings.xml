@@ -10,4 +10,9 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
+
+
+    <string name="step_main">Main</string>
+    <string name="step_datails">Details</string>
+    <string name="step_confirm">Confirm</string>
 </resources>
