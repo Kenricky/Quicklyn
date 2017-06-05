@@ -22,4 +22,10 @@
     <string name="post_office">office / building</string>
     <string name="post_room">rooms / shared house</string>
     <string name="post_other">other</string>
+    <string name="price">C$50</string>
+    <string name="posttitle">Jun 20th, Office room and washroom Cleaning</string>
+    <string name="office">office</string>
+    <string name="apt">appertment</string>
+
+
 </resources>
