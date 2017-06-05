@@ -22,7 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PostStep1Activity"></activity>
+        <activity android:name=".PostStep1Activity" />
+        <activity android:name=".PostStep2Activity" />
+        <activity android:name=".PostStep3Activity"></activity>
     </application>
 
 </manifest>

@@ -48,7 +48,6 @@ public class User {
     public boolean saveUser(){
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference dbRef = database.getReference("quicklyn-75377");
-
-
+        return false;
     }
 }
