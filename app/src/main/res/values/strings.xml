@@ -12,25 +12,32 @@
     <string name="error_field_required">This field is required</string>
 
 
+    <!--Buttons-->
     <string name="location">Location</string>
     <string name="continue_button">Continue</string>
     <string name="create_post_button">Create New Post</string>
 
+    <!--Common to PostActivities -->
     <string name="step_main">Main</string>
     <string name="step_details">Details</string>
     <string name="step_confirm">Confirm</string>
 
+    <!--PostActivityStep1-->
+    <string name="post_title">Title</string>
+    <string name="post_description">Description/Tasks</string>
+    <string name="post_price_currency">C$</string>
+    <string name="invalid_title">Please type a valid title</string>
+    <string name="invalid_description">Please type a valid description</string>
+    <string name="invalid_price">Please type a valid price</string>
+
+    <!--PostActivityStep2-->
     <string name="post_type_location">What type of place</string>
     <string name="post_housing">housing</string>
     <string name="post_apartment">apartment / condominium</string>
     <string name="post_office">office / building</string>
     <string name="post_room">rooms / shared house</string>
-
-    <string name="post_title">Title</string>
-    <string name="post_description">Description/Tasks</string>
-    <string name="post_price_currency">C$</string>
-
     <string name="post_other">other</string>
+
     <string name="price">C$50</string>
     <string name="posttitle">Jun 20th, Office room and washroom Cleaning</string>
     <string name="office">office</string>
