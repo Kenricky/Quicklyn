@@ -13,9 +13,13 @@
 
 
     <!--Buttons-->
-    <string name="location">Location</string>
     <string name="continue_button">Continue</string>
     <string name="create_post_button">Create New Post</string>
+
+    <!--Hint-->
+    <string name="location_hint">Location</string>
+    <string name="other_hint">Please, specify</string>
+    <string name="date_hint">Date: Jan 01, 2017</string>
 
     <!--Common to PostActivities -->
     <string name="step_main">Main</string>
@@ -26,9 +30,9 @@
     <string name="post_title">Title</string>
     <string name="post_description">Description/Tasks</string>
     <string name="post_price_currency">C$</string>
-    <string name="invalid_title">Please type a valid title</string>
-    <string name="invalid_description">Please type a valid description</string>
-    <string name="invalid_price">Please type a valid price</string>
+    <string name="invalid_title">Please, type a valid title</string>
+    <string name="invalid_description">Please, type a valid description</string>
+    <string name="invalid_price">Please, type a valid price</string>
 
     <!--PostActivityStep2-->
     <string name="post_type_location">What type of place</string>
@@ -37,6 +41,10 @@
     <string name="post_office">office / building</string>
     <string name="post_room">rooms / shared house</string>
     <string name="post_other">other</string>
+    <string name="invalid_location">Please, select a valid location</string>
+    <string name="invalid_place_type">Please, choose one type of place</string>
+    <string name="invalid_place_other">Please, specify the type of place</string>
+    <string name="invalid_date">Please, select a valid date</string>
 
     <string name="price">C$50</string>
     <string name="posttitle">Jun 20th, Office room and washroom Cleaning</string>

@@ -36,9 +36,9 @@ public class PostStep1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 if(validateForm()) {
                     Intent intent = new Intent(PostStep1Activity.this, PostStep2Activity.class);
-                    intent.putExtra(TITLE, mPostTitle.getText());
-                    intent.putExtra(DESCRIPTION, mPostDescription.getText());
-                    intent.putExtra(PRICE, mPostPrice.getText());
+                    intent.putExtra(TITLE, mPostTitle.getText().toString());
+                    intent.putExtra(DESCRIPTION, mPostDescription.getText().toString());
+                    intent.putExtra(PRICE, mPostPrice.getText().toString());
                     startActivity(intent);
                 }
             }

@@ -102,11 +102,13 @@
                 android:id="@+id/post_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:drawableLeft="@drawable/ic_map"
                 android:maxLines="1"
-                android:hint="@string/location"/>
+                android:lines="1"
+                android:scrollHorizontally="true"
+                android:textIsSelectable="true"
+                android:ellipsize="end"
+                android:hint="@string/location_hint"/>
         </LinearLayout>
 
         <LinearLayout
@@ -167,6 +169,7 @@
                     android:id="@+id/other_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/other_hint"
                     android:visibility="gone"/>
 
             </RadioGroup>
@@ -179,8 +182,8 @@
                     android:id="@+id/post_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="date">
-                </EditText>
+                    android:hint="@string/date_hint"
+                    android:textIsSelectable="true" />
             </LinearLayout>
 
             <LinearLayout
@@ -189,6 +192,7 @@
                 android:orientation="vertical">
 
                 <Button
+                    android:id="@+id/post2_button_continue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/continue_button"
