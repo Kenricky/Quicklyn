@@ -36,9 +36,7 @@ public class PostStep2Activity extends AppCompatActivity implements DatePickerDi
     private DatePickerDialog mDatePickerDialog;
 
     private static final int PLACE_PICKER_REQUEST = 99;
-    private static final String LOCATION = "location_data";
-    private static final String PLACE_TYPE = "place_type_data";
-    private static final String DATE = "date_data";
+
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("MMM d, yyyy", Locale.getDefault());
 
@@ -100,16 +98,16 @@ public class PostStep2Activity extends AppCompatActivity implements DatePickerDi
                 if(validateData()){
                     Intent intent = new Intent(PostStep2Activity.this, PostStep3Activity.class);
                     intent.putExtras(getIntent());
-                    intent.putExtra(LOCATION, mLocation.getText().toString());
-                    intent.putExtra(DATE, mPostDate.getText().toString());
+                    PostStep3Activity.setLocation(mLocation.getText().toString(), intent);
+                    PostStep3Activity.setDate(mPostDate.getText().toString(), intent);
 
-                    String placeType = new String();
+                    String placeType;
                     if (mTypeGroup.getCheckedRadioButtonId() == R.id.other_radio){
                         placeType = mOtherText.getText().toString();
                     }else{
                         placeType = ((RadioButton)findViewById(mTypeGroup.getCheckedRadioButtonId())).getText().toString();
                     }
-                    intent.putExtra(PLACE_TYPE, placeType);
+                    PostStep3Activity.setPlaceType(placeType, intent);
 
                     startActivity(intent);
                 }
@@ -133,7 +131,7 @@ public class PostStep2Activity extends AppCompatActivity implements DatePickerDi
 
 
         try {
-            if(mPostDate.getText().toString().toString().equals("") ||
+            if(mPostDate.getText().toString().equals("") ||
                     dateFormat.parse(mPostDate.getText().toString()).getTime() < System.currentTimeMillis()){
                 Toast.makeText(PostStep2Activity.this, R.string.invalid_date, Toast.LENGTH_SHORT).show();
                 return false;

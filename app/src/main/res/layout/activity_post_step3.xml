@@ -65,6 +65,8 @@
 
             </LinearLayout>
 
+            <!--Start of screen data-->
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="1dp"

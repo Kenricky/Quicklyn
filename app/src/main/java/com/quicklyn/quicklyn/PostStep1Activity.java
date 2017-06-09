@@ -16,9 +16,7 @@ public class PostStep1Activity extends AppCompatActivity {
     private EditText mPostPrice;
 
 
-    private static final String TITLE = "title_data";
-    private static final String DESCRIPTION = "description_data";
-    private static final String PRICE = "price_data";
+
 
 
     @Override
@@ -36,9 +34,9 @@ public class PostStep1Activity extends AppCompatActivity {
             public void onClick(View v) {
                 if(validateForm()) {
                     Intent intent = new Intent(PostStep1Activity.this, PostStep2Activity.class);
-                    intent.putExtra(TITLE, mPostTitle.getText().toString());
-                    intent.putExtra(DESCRIPTION, mPostDescription.getText().toString());
-                    intent.putExtra(PRICE, mPostPrice.getText().toString());
+                    PostStep3Activity.setTitle(mPostTitle.getText().toString(), intent);
+                    PostStep3Activity.setDescription(mPostDescription.getText().toString(), intent);
+                    PostStep3Activity.setPrice(Double.valueOf(mPostPrice.getText().toString()), intent);
                     startActivity(intent);
                 }
             }
