@@ -7,20 +7,20 @@ import java.util.Date;
 
 public class Post {
 
-    private Long id;
+    private String id;
     private String title;
     private String description;
     private Double price;
-    private Location location;
+    private String location;
     private String typeLocation;
-    private Date date;
-    private Date dateCreated;
+    private String date;
+    private Long dateCreated;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -48,11 +48,11 @@ public class Post {
         this.price = price;
     }
 
-    public Location getLocation() {
+    public String getLocation() {
         return location;
     }
 
-    public void setLocation(Location location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 
@@ -64,19 +64,19 @@ public class Post {
         this.typeLocation = typeLocation;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Date getDateCreated() {
+    public Long getDateCreated() {
         return dateCreated;
     }
 
-    public void setDateCreated(Date dateCreated) {
+    public void setDateCreated(Long dateCreated) {
         this.dateCreated = dateCreated;
     }
 }

@@ -17,8 +17,9 @@
         android:padding="20dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -35,7 +36,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/step_main"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textSize="16dp"/>
             </LinearLayout>
 
 
@@ -61,7 +63,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/step_details"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textSize="16dp"/>
 
             </LinearLayout>
 
@@ -86,7 +89,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/step_confirm"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textSize="16dp"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -96,7 +100,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp">
+            android:padding="10dp">
 
             <EditText
                 android:id="@+id/post_location"
@@ -104,18 +108,20 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/ic_map"
                 android:maxLines="1"
-                android:lines="1"
                 android:scrollHorizontally="true"
                 android:textIsSelectable="true"
                 android:ellipsize="end"
-                android:hint="@string/location_hint"/>
+                android:inputType="text"
+                android:hint="@string/location_hint"
+                android:drawablePadding="5dp"
+                android:textSize="20dp"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="0dp">
+            android:padding="10dp">
             
             <LinearLayout
                 android:layout_width="match_parent"
@@ -124,7 +130,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/post_type_location"/>
+                    android:text="@string/post_type_location"
+                    android:textSize="20dp"/>
             </LinearLayout>
             
             <RadioGroup
@@ -136,70 +143,80 @@
                     android:id="@+id/housing_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/post_housing"/>
+                    android:text="@string/post_housing"
+                    android:textSize="16dp"/>
 
 
                 <RadioButton
                     android:id="@+id/apartment_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/post_apartment"/>
+                    android:text="@string/post_apartment"
+                    android:textSize="16dp"/>
 
 
                 <RadioButton
                     android:id="@+id/office_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/post_office"/>
+                    android:text="@string/post_office"
+                    android:textSize="16dp"/>
 
 
                 <RadioButton
                     android:id="@+id/room_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/post_room"/>
+                    android:text="@string/post_room"
+                    android:textSize="16dp"/>
 
                 <RadioButton
                     android:id="@+id/other_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/post_other"/>
+                    android:text="@string/post_other"
+                    android:textSize="16dp"/>
 
                 <EditText
                     android:id="@+id/other_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/other_hint"
+                    android:textSize="20dp"
                     android:visibility="gone"/>
 
             </RadioGroup>
+        </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
 
-                <EditText
-                    android:id="@+id/post_date"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/date_hint"
-                    android:textIsSelectable="true" />
-            </LinearLayout>
-
-            <LinearLayout
+            <EditText
+                android:id="@+id/post_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/post2_button_continue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/continue_button"
-                    android:layout_gravity="center_horizontal"/>
-            </LinearLayout>
-
+                android:hint="@string/date_hint"
+                android:textIsSelectable="true"
+                android:textSize="20dp" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/post2_button_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_button"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
 
     </LinearLayout>
 
