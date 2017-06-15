@@ -1,13 +1,18 @@
 <resources>
     <string name="app_name">Quicklyn</string>
 
+    <!--APP commons-->
+    <string name="title_new_post">New Post</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm password</string>
+    <string name="prompt_name">Full name</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="login_successful">Login Successful!</string>
-    <string name="error_login_fail">Login Unsuccessful!</string>
+    <string name="error_invalid_credentials">Invalid Login or Password</string>
     <string name="error_field_required">This field is required</string>
 
     <!--Create account-->
@@ -17,11 +22,12 @@
     <string name="error_email_required">Please, enter a valid email</string>
     <string name="error_password_required">Please, enter a password</string>
     <string name="error_password_has_no_number">Password has to have number</string>
-    <string name="error_password_match">Passwords don\'t match</string>
+    <string name="error_password_match">Passwords do not match</string>
 
     <!--Buttons-->
     <string name="continue_button">Continue</string>
     <string name="create_post_button">Create New Post</string>
+    <string name="login">Login</string>
 
     <!--Hint-->
     <string name="location_hint">Location</string>

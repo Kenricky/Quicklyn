@@ -1,6 +1,7 @@
 package com.quicklyn.quicklyn;
 
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-public class CreateAccountActivity extends LoginActivity {
+public class CreateAccountActivity extends AppCompatActivity {
 
     private EditText mName;
     private EditText mEmail;
@@ -23,8 +24,8 @@ public class CreateAccountActivity extends LoginActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        requestWindowFeature(R.string.create_account);
+        setContentView(R.layout.activity_create_account);
+        setTitle(R.string.create_account);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
@@ -45,6 +46,7 @@ public class CreateAccountActivity extends LoginActivity {
 
                     mDatabase.child("users").push().setValue(user);
                     Toast.makeText(CreateAccountActivity.this, R.string.account_created, Toast.LENGTH_LONG).show();
+                    finish();
                 }
             }
         });
@@ -64,7 +66,7 @@ public class CreateAccountActivity extends LoginActivity {
             return false;
         }
         for(int i=0; i<mPassword.getText().toString().length(); i++){
-            if(isNumeric(mPassword.getText().toString().charAt(i))){
+            if(isNumeric(String.valueOf(mPassword.getText().toString().charAt(i)))){
                 break;
             }
             Toast.makeText(CreateAccountActivity.this, R.string.error_password_has_no_number, Toast.LENGTH_LONG).show();
@@ -76,13 +78,13 @@ public class CreateAccountActivity extends LoginActivity {
         return true;
     }
 
-    private boolean isNumeric(char x){
+    private boolean isNumeric(String x){
         try{
-            new Double(x);
-            return true;
-        }catch (Exception e){
+            Double.parseDouble(x);
+        }catch (NumberFormatException e){
             return false;
         }
+        return true;
     }
 
 }
