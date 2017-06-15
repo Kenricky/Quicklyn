@@ -214,7 +214,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/continue_button"
                 android:layout_gravity="center_horizontal"
-                />
+                android:background="@drawable/button_blue"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp" />
         </LinearLayout>
 
 

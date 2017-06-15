@@ -20,8 +20,6 @@ public class PostStep3Activity extends AppCompatActivity {
     private TextView mPostDate;
     private Button mButtonCreatePost;
 
-    private DatabaseReference mDatabase;
-
     private static final String TITLE = "title_data";
     private static final String DESCRIPTION = "description_data";
     private static final String PRICE = "price_data";
@@ -33,6 +31,7 @@ public class PostStep3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_step3);
+        setTitle(R.string.title_new_post);
 
         mPostTitle = (TextView) findViewById(R.id.post_title);
         mPostLocation = (TextView) findViewById(R.id.post_location);

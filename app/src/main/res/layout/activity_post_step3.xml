@@ -201,7 +201,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/create_post_button"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_green"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"/>
         </LinearLayout>
 
     </LinearLayout>

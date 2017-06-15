@@ -23,6 +23,8 @@ public class PostStep1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_step1);
+        setTitle(R.string.title_new_post);
+
 
         mButtonContinue = (Button) findViewById(R.id.post1_button_continue);
         mPostTitle = (EditText) findViewById(R.id.title_text);

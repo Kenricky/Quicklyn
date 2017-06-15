@@ -43,6 +43,7 @@ public class PostStep2Activity extends AppCompatActivity implements DatePickerDi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_step2);
+        setTitle(R.string.title_new_post);
 
         mLocation = (EditText) findViewById(R.id.post_location);
         mTypeGroup = (RadioGroup) findViewById(R.id.type_group);
