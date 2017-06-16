@@ -20,6 +20,8 @@ public class PostStep3Activity extends AppCompatActivity {
     private TextView mPostDate;
     private Button mButtonCreatePost;
 
+    private DatabaseReference mDatabase;
+
     private static final String TITLE = "title_data";
     private static final String DESCRIPTION = "description_data";
     private static final String PRICE = "price_data";
@@ -40,6 +42,8 @@ public class PostStep3Activity extends AppCompatActivity {
         mPostDate = (TextView) findViewById(R.id.post_date);
         mButtonCreatePost = (Button) findViewById(R.id.button_create_post);
 
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+
         mPostTitle.setText(getIntent().getStringExtra(TITLE));
         mPostLocation.setText(getIntent().getStringExtra(LOCATION));
         mPostPrice.setText(String.valueOf(getIntent().getDoubleExtra(PRICE, 0)));
@@ -57,7 +61,7 @@ public class PostStep3Activity extends AppCompatActivity {
                 post.setDateCreated(System.currentTimeMillis());
                 post.setDate(mPostDate.getText().toString());
 
-
+                mDatabase.child("posts").push().setValue(post);
 
                 Toast.makeText(PostStep3Activity.this, "Data inserted", Toast.LENGTH_SHORT ).show();
 
